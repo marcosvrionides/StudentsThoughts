@@ -1,0 +1,23 @@
+@import url('../DarkMode.css');
+
+.profile_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    margin-top: 1em;
+}
+
+.profile_picture, .profile_picture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: var(--box-shadow);
+}
+
+.profile_picture img {
+    position: absolute;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}

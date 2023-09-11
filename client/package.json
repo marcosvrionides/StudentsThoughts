@@ -1,0 +1,51 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "@firebase/auth-types": "^0.12.0",
+    "body-parser": "^1.20.1",
+    "bootstrap": "^5.2.2",
+    "express": "^4.18.1",
+    "firebase": "^9.12.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-google-button": "^0.7.2",
+    "react-icons": "^4.8.0",
+    "react-lazy": "^1.1.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^2.1.8",
+    "react-sticky": "^6.0.3",
+    "react-sticky-box": "^1.0.2",
+    "react-transition-group": "^4.4.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && node -e \"const fs=require('fs'); let html = fs.readFileSync('build/index.html').toString(); html = html.replace(/<head>/i, '$&<base href=\\\"/\\\">'); fs.writeFileSync('build/index.html', html);\"",
+    "serverStart": "node ../server/app.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:9000/",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+@import url('../DarkMode.css');
+
+.account_body {
+    background-color: var(--background-color);
+    padding: 1em;
+    min-height: 100vh;
+}
+
+.about_posts_container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em
+}
+
+.about_master_container,
+.posts_master_container {
+    flex: 1;
+}
+
+.heading {
+    margin-left: 1.5em;
+    color: var(--accent-color);
+}
+
+.users_posts,
+.users_about {
+    color: var(--text-color);
+    background-color: grey;
+    border: 7px solid black;
+    border-bottom: 0;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    padding: 3em;
+    min-height: 100vh;
+}
+
+.post_container {
+    margin: 3%;
+    border-radius: 1em;
+    border: var(--border);
+    padding: 2%;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+
+.accountBackButton {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    .about_posts_container {
+        flex-direction: column;
+    }
+
+    .users_posts {
+        border-radius: 0;
+    }
+
+    .users_about {
+        min-height: unset;
+    }
+
+    .master_container {
+        flex-direction: column;
+    }
+}

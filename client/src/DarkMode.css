@@ -1,0 +1,19 @@
+:root {
+    --accent-color: rgb(81, 159, 248);
+    --background-color: white;
+    --secondary-background-color: rgb(235, 235, 235);
+    --text-color: black;
+    --sub-text-color: grey;
+    --box-shadow: 0px 0px 50px rgb(180, 180, 180);
+    --border: 0.1em solid #bbbbbb;
+}
+
+:root.dark {
+    --accent-color: rgb(255, 102, 102);
+    --background-color: #222222;
+    --secondary-background-color: #333333;
+    --text-color: white;
+    --sub-text-color: #cccccc;
+    --box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    --border: 0.1em solid #333333;
+}

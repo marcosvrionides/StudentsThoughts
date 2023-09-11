@@ -1,0 +1,109 @@
+@import url('../DarkMode.css');
+
+.feed {
+    margin: 3%;
+    border-radius: 1em;
+    border: var(--border);
+    padding: 2%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: var(--box-shadow);
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.post_settings_button {
+    border: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.close_comments_button {
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+.likes,
+.comments_button {
+    border: var(--border);
+    border-radius: 1em;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+.close_comments_button {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+}
+
+.sort_dropdown_container {
+    width: fit-content;
+    margin-left: 10%;
+    background-color: var(--background-color);
+    border: var(--border);
+}
+
+.dropdown_button,
+.dropdown_content button {
+    border: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown_content button:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dropdown_content {
+    display: none;
+}
+
+.sort_dropdown_container:hover .dropdown_content {
+    display: block;
+}
+
+.postCommunity {
+    font-size: large;
+    font-weight: bold;
+}
+
+.poster_name {
+    color: var(--sub-text-color);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.poster_name:hover {
+    color: var(--accent-color);
+    font-size: large;
+}
+
+.postContentContainer {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    border: var(--border);
+    border-radius: 1em;
+}
+
+.postImageVideo {
+    border-radius: 1em;
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.postText {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.noPosts {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

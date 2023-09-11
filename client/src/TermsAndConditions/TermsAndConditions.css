@@ -1,0 +1,30 @@
+.terms-and-conditions {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .terms-and-conditions__title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-and-conditions__description {
+    margin-bottom: 2rem;
+  }
+  
+  .terms-and-conditions__section {
+    margin-bottom: 2rem;
+  }
+  
+  .terms-and-conditions__subtitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .terms-and-conditions__text {
+    margin-bottom: 1rem;
+  }
+  

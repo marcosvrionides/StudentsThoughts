@@ -1,0 +1,12 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    background: var(--accent-color);
+    border-radius: 1em;
+    border: none;
+    transition: all 0.25s;
+}
+
+.backButton:hover {
+    font-size: larger;
+}

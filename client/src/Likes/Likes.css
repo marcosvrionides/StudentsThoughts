@@ -1,0 +1,46 @@
+@import url('../DarkMode.css');
+
+.likers_master_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: var(--border);
+    border-radius: 1em;
+    height: 80%;
+    width: 40%;
+    z-index: 1;
+    background-color: var(--background-color);
+    overflow-y: scroll;
+    word-wrap: break-word;
+    height: 50vh;
+    padding: 20px;
+}
+
+.close_like_button {
+    z-index: 2;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+.like_button {
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+    .likers_master_container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .likers_master_container {
+        width: 95%;
+    }
+}

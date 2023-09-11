@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+# dependencies
+/client/node_modules
+/server/node_modules
+/node_modules
+
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env
+/server/firebase.js
+/server/studentsthoughtsfyp-firebase-adminsdk-iholh-12526172dc.json
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules
+=======
+# dependencies
+/client/node_modules
+/server/node_modules
+/node_modules
+
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env
+/server/firebase.js
+/server/studentsthoughtsfyp-firebase-adminsdk-iholh-12526172dc.json
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules
+>>>>>>> 9f9287dcbfcbacd8aa9aa3f61c32cdaa12c06a72

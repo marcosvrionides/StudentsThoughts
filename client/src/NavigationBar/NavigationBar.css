@@ -1,0 +1,72 @@
+@import url('../DarkMode.css');
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    height: 4em;
+    padding: 1%;
+    background-color: var(--background-color);
+    border: var(--border);
+    border-top: 0;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    gap: 10%;
+    box-shadow: var(--box-shadow);
+    margin-inline: 1.5%;
+}
+
+.flex_child {
+    flex: 1;
+    position: relative;
+}
+
+.homepage_button,
+.logout_button,
+.menu_button,
+.settings_button {
+    color: var(--text-color);
+    margin: 0;
+    border: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    font-weight: 700;
+    background: none;
+}
+
+.homepage_button {
+    color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+
+    #search {
+        display: none;
+    }
+
+    .navbar_container {
+        margin-inline: 4%;
+    }
+
+}
+
+@media (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #settings {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar_container {
+        margin-inline: 3%;
+    }
+}

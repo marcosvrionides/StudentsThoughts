@@ -1,0 +1,116 @@
+@import url('../DarkMode.css');
+
+.post_container {
+    border-radius: 1em;
+    border: var(--border);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    color: var(--text-color);
+}
+
+.post_content {
+    border-radius: 1em;
+    width: 100%;
+    background-color: white;
+    border: 0.1em solid #bbbbbb;
+    padding: 0.5em;
+    font-size: 1em;
+    transition: background-color 0.2s;
+    resize: none;
+}
+
+.post_content::-webkit-scrollbar {
+    display: none;
+}
+
+.post_content:hover {
+    background-color: #ebebeb;
+}
+
+.community_input {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    width: 100%;
+    border: var(--border);
+    transition: background-color 0.2s;
+}
+
+.community_input:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.community_dropdown_container {
+    max-height: 10em;
+    overflow-y: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    border: var(--border);
+    border-bottom-left-radius: 1em;
+    background-color: var(--background-color);
+    z-index: 1;
+}
+
+.communities_dropdown, .selectedCommunity {
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    padding: 0.5em;
+    border: none;
+    border-bottom: var(--border);
+    background-color: var(--background-color);
+    font-size: 1em;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.communities_dropdown:hover, .selectedCommunity {
+    background-color: lightgray;
+    color: black;
+}
+
+.slectedCommunity {
+    display: flex;
+    gap: 0.5em;
+    background-color: blue;
+    border-radius: 1em;
+    padding-inline: 0.5em;
+}
+
+.slectedCommunity #name {
+    color: white;
+    font-weight: bold;
+}
+
+.deleteSelectedCommunityButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-inline: 0.5em;
+}
+
+.post_button {
+    border-radius: 1em;
+    border: 0.1em solid #bbbbbb;
+    padding-inline: 1em;
+}
+
+.file-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove_inputed_file_button {
+    background-color: #eeeeee;
+    color: #bbbbbb;
+    border-radius: 1em;
+    border: 0.1em solid #bbbbbb;
+    padding-inline: 0.5em;
+    margin-left: 1em;
+}
+
+.chars_left {
+    font-size: 0.8em;
+    color: gray;
+    margin-bottom: 0.75em;
+}

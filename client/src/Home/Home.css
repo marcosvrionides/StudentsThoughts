@@ -1,0 +1,97 @@
+@import url('../DarkMode.css');
+
+.home_body {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.NavigationBar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.leftSidebar {
+    position: sticky;
+    top: 95px;
+    height: 90vh;
+    margin-inline: 1%;
+    width: 25em;
+    overflow-y: auto;
+}
+
+.leftSidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.middlePart {
+    position: sticky;
+    top: 95px;
+    height: fit-content;
+    margin-inline: 1%;
+    width: 50em;
+}
+
+.rightSidebar {
+    position: sticky;
+    top: 95px;
+    height: fit-content;
+    margin-inline: 1%;
+    width: 25em;
+}
+
+.loginSidebar {
+    position: fixed;
+    bottom: 2em;
+    width: 20em;
+    height: auto;
+    background-color: white;
+    border: 0.1em solid black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.loginSidebar button {
+    background-color: transparent;
+    border: 0;
+    color: blue;
+}
+
+.smallScreenSidebar {
+    z-index: 1;
+    background-color: transparent;
+    width: 100%;
+}
+
+.hideSmallScreenSidebar, .hideSmallScreenHomepage {
+    display: none;
+}
+
+.smallScreenHomepage {
+    position: sticky;
+    top: 95px;
+    height: fit-content;
+    margin-inline: 1%;
+    width: 100vw;
+}
+
+.toggleSidebar {
+    margin-inline: 1%;
+}
+
+.additional_buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#settingsButton {
+    background-color: var(--background-color);
+    border: var(--border);
+    border-radius: 1em;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color);
+}
